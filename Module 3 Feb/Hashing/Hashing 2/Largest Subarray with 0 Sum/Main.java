@@ -24,10 +24,6 @@ class Solution {
             }
         }
 
-        // if (runningSum == 0) {
-        //     return arr.length;
-        // }
-
         return maxLen;
     }
 }
