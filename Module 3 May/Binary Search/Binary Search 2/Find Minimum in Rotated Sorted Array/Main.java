@@ -21,6 +21,9 @@ class Solution
 			if (arr[mid - 1] > arr[mid]) {
 				// found pivot
 				return arr[mid];
+			} else if (arr[si] <= arr[ei]) {
+				// array is sorted
+				return arr[si];	
 			} else if (arr[si] <= arr[mid]) {
 				// left side is sorted
 				// move right
