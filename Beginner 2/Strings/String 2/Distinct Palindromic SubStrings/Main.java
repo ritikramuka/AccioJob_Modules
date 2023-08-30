@@ -36,6 +36,10 @@ public class Main {
 
 		ArrayList<String> ans = new ArrayList<>();
 
+		if (list.size() == 0) {
+			return;
+		}
+
 		ans.add(list.get(0));
 
 		int idx = 1;
@@ -46,9 +50,11 @@ public class Main {
 				idx++;
 			}
 
-			ans.add(list.get(idx));
-			str = list.get(idx);
-			idx++;
+			if (idx < list.size()) {
+				ans.add(list.get(idx));
+				str = list.get(idx);
+				idx++;	
+			}
 		}
 
 		for (int i = 0; i < ans.size(); i++) {
